@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script>
+//			$(function(){
+//				$("#btn").click(function(){
+//				alert(6666);
+//				$("#ima").setProperty("src","q4.jpg");
+//					
+//				});
+//				
+//				
+//			});
+			
+                 function cha(){
+                 var s=	document.getElementById("ima");
+                // s.src="q4.jpg";
+                //document.getCurrentTime();
+                 s.src="http://localhost:8080/webtest4/demo12?"+new Date().getTime();
+                 }
+		</script>
+	</head>
+	<body>
+		<img id="ima" src="http://localhost:8080/webtest4/demo12" onclick="cha()"/>
+		<input type="button"  id="btn" value="看不清，换一张" onclick="cha()" />
+	</body>
+</html>
